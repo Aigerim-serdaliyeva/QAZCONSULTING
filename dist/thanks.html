@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>QAZCONSULTING</title>
+  <meta name="description" content="QAZCONSULTING">
+  <meta name="keywords" content="QAZCONSULTING">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon.ico?v=14" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body id="main-page">
+
+  <div class="page-wrapper">
+
+    <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+    
+    <div class="callback__wrapper">
+      <div class="callback__items">
+        <div class="callback__item">
+          <a target="_parent" href="https://api.whatsapp.com/send?phone=77715777771" id="whatsapp">
+            <i class="callback__icon callback__whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <div class="callback__item">
+          <a href="tel:+77715777771" id="callMe" class="call-me">
+            <i class="callback__icon callback__phone"></i>  Позвонить
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+          </a>
+
+          <div class="grow"></div>
+
+          <div class="header__aside">
+            <div class="header__top">
+              <div class="header__grafik  d-none d-lg-block"><img src="./img/clock.png" alt="">Пн.-Пт.:10:00-19:00</div>
+              <a href="mailto:info@qazconsulting.kz" class="header__email  d-none d-lg-block"><img src="./img/email.png" alt="">info@qazconsulting.kz</a>         
+  
+              <div class="header__phone d-none d-lg-block">
+                <a href="tel:+77715777771" class="text-phone" id="phone_number"><img src="./img/telephone.png" alt="">+7 771 577 77 71</a>
+              </div>
+            </div>       
+  
+            <div class="header__bottom">
+              <nav class="main-menu">
+                <div class="container">
+                  <ul>
+                    <li class="link">
+                      <a href="/#service">Услуги</a>
+                    </li>
+                    <li class="link">
+                      <a href="/#example">Примеры дел</a>
+                    </li>
+                    <li class="link">
+                      <a href="/#support">Сопровождение компаний</a>
+                    </li>
+                    <li class="link">
+                      <a href="/#contact">Контакты</a>
+                    </li>
+                    <li class="link last">
+                      <a class="color" href="/blog.html">Статьи</a>
+                    </li>
+                    <li class="d-lg-none">
+                      <a href="tel:+77715777771" class="text-phone" id="phone_number"><img src="./img/telephone.png" alt="">+7 771 577 77 71</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+  
+              <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
+            </div> 
+          </div>                  
+
+          <button class="hamburger hamburger--elastic hamburger--accessible">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <section class="section s-thanks">
+      <div class="container">
+        <div class="s-thanks__img">
+          <img src="./img/checked-big.png" alt="">
+        </div>
+        <div class="s-thanks__title">Спасибо!</div>
+        <div class="s-thanks__text">Ваша заявка рассматривается. В ближайшее время мы свяжемся с Вами!</div>
+        <a href="/" class="button">Вернуться на главную</a>          
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+          </a>
+          <div class="footer__block">
+            <div class="footer__title">© ТОО «QazConsultingGroup». Все права защищены 2018-2019</div>
+            <div class="politika">Политика конфиденциальности</div>
+          </div>          
+          <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать звонок</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+
+    <div class="form form--vertical">
+      <form action="/mail.php" method="post">
+        <div class="form__title"><span>Оставьте заявку</span> <br>
+          мы свяжемся с Вами <br> в  ближайшее время!</div>
+        <div class="form__content">
+          <input type="hidden" name="info" value="Оставить заявку">
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Ваше имя">
+          </div>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Телефон*" required minlength="10">
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <div class="input-div">
+            <input type="email" class="input" name="email" placeholder="E-mail*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">ЗАКАЗАТЬ ЗВОНОК</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
