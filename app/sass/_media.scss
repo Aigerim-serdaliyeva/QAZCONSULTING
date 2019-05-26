@@ -170,6 +170,10 @@
         display: flex;
         align-items: flex-start;
 
+        &-list {
+          position: static;
+        }
+
         &__img {
           margin: 0 20px 0 0;
           flex-shrink: 0;
