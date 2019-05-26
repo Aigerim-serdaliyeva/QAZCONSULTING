@@ -34,7 +34,7 @@ gulp.task('libs-js', function () {
     'node_modules/wow.js/dist/wow.min.js'
   ])
     .pipe(concat('libs.min.js'))
-    .pipe(uglify()) // Минимизировать весь js (на выбор)
+    //.pipe(uglify()) // Минимизировать весь js (на выбор)
     .pipe(gulp.dest('app/js'));
 });
 
