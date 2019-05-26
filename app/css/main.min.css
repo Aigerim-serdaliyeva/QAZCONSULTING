@@ -6784,6 +6784,8 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start; }
+    .s-blog .blog-list {
+      position: static; }
     .s-blog .blog__img {
       margin: 0 20px 0 0;
       -webkit-flex-shrink: 0;
